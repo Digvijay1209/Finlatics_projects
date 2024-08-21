@@ -1,1 +1,23 @@
+COUNT Function
+Purpose: Counts the number of non-blank values in a column.
 
+1- Count of orders = COUNT(Orders[Order ID]) 
+
+COUNTROWS Function
+Purpose: Counts the number of rows in a table.
+
+2-Count of orders 2 = COUNTROWS(Orders) 
+
+
+3-Distinct count of orders=DISTINCTCOUNT(Orders[Order ID])
+
+4-Sum of Quantity = SUM(Orders[Quantity]) 
+
+5- Profit Cost = SUM(Orders[Selling Price])-SUM(Orders[Product Cost]) 
+
+6- Selling Price minus Product Cost By Quick Measure = 
+   SUM('Orders'[Selling Price]) - SUM('Orders'[Product Cost])
+
+7- Day = WEEKDAY(Customers[Order Date],2) 
+
+8- Order Category = IF(Orders[Quantity]<30,"Small Order","Big Order") 
